@@ -14,3 +14,11 @@ p {
     text-align: center;
     color: #555;
 }
+h2 {
+    text-align: center;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
