@@ -26,11 +26,24 @@ h2{
     margin-top: 30px;
 }
 
+h2 + p {
+    color: #1abc9c;
+}
+
+h2 ~ p { 
+    font-size: 1.3rem;
+}
+
 p {
     text-align: center;
     color: #ecf0f1;
     font-size: 1.2rem;
     line-height: 1.5;
+}
+
+section > p {
+    background-color: #34495e;
+    color: #ecf0f1;
 }
 
 img {
@@ -63,4 +76,20 @@ h2::before {
     content: "🦑";
     font-size: 30px;
     margin-right: 10px;
+}
+
+.main-header {
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px;
+}
+
+h2.featured {
+    color: #1abc9c;
+}
+
+p.highlight:hover {
+    background-color: #f1c40f;
+    color: #e74c3c
 }
