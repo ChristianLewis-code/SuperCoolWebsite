@@ -88,6 +88,7 @@ h2::before {
 h2.featured {
     color: #1abc9c;
 }
+/*a bit unneccesary and ugly but i couldnt think of anywhere else to put it without major revision*/
 
 p.highlight:hover {
     background-color: #f1c40f;
