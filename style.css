@@ -9,8 +9,6 @@ body {
     min-height: 100vh;
 }
 
-/*header*/
-
 header {
     background: linear-gradient(to right, #305b86, #34495e);
     color: #ecf0f1;
@@ -124,7 +122,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/*link styles?*/
+/*link/nav styles*/
 a {
     text-decoration: none;
     color: #1abc9c;
@@ -167,7 +165,7 @@ nav a.active {
     border-radius: 10px;
 }
 
-/* layout for smaller screens?*/
+/* layout for smaller screens*/
 @media screen and (max-width: 768px) {
     .three-column {
         grid-template-columns: 1fr;
@@ -186,7 +184,7 @@ nav a.active {
     }
 
     h1 {
-        font-size: 1.7rem
+        font-size: 1.4rem
     }
 
     nav {
