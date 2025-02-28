@@ -4,12 +4,15 @@ body {
     color: #ecf0f1;
     margin: 0 !important;
     padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
 }
 
 /*header*/
 
 header {
-    background: linear-gradient(to right, #2c4a68, #34495e);
+    background: linear-gradient(to right, #305b86, #34495e);
     color: #ecf0f1;
     text-align: center;
     padding: 20px;
@@ -143,8 +146,8 @@ nav a.active {
 /* columns for 2nd page */
 
 .three-column {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
 }
@@ -167,17 +170,23 @@ nav a.active {
 /* layout for smaller screens?*/
 @media screen and (max-width: 768px) {
     .three-column {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 
     img {
-        width: 80%;
+        max-width: 80%;
+        width: auto;
     }
 }
 
 @media screen and (max-width: 480px) {
+    img {
+        max-width: 80%;
+        width: auto;
+    }
+
     h1 {
-        font-size: 2rem
+        font-size: 1.7rem
     }
 
     nav {
@@ -189,5 +198,11 @@ nav a.active {
     nav a {
         display: block;
         margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    p {
+        font-size: 0.7rem !important;
     }
 }
