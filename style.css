@@ -133,6 +133,13 @@ a:hover {
     text-decoration: underline;
 }
 
+nav a.active {
+    background-color: #ff6f61;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
 /* columns for 2nd page */
 
 .three-column {
@@ -157,7 +164,7 @@ a:hover {
     border-radius: 10px;
 }
 
-/* layout for smaller screens*/
+/* layout for smaller screens?*/
 @media screen and (max-width: 768px) {
     .three-column {
         flex-direction: column;
