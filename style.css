@@ -179,7 +179,7 @@ nav a.active {
 
 @media screen and (max-width: 480px) {
     img {
-        max-width: 80%;
+        max-width: 90%;
         width: auto;
     }
 
@@ -202,5 +202,11 @@ nav a.active {
 @media screen and (max-width: 400px) {
     p {
         font-size: 0.7rem !important;
+    }
+}
+
+@media screen and (max-width: 200px) {
+    p {
+        font-size: 0.3rem !important;
     }
 }
