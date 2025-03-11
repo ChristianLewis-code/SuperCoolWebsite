@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gargantuan Sea Creatures</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <nav>
         <a href="index.html">Back To Home</a>
         <a href="page2.html">Immortal Creatures</a>
@@ -19,7 +21,7 @@
         <h1>The Ocean's Giants</h1>
         <p>Discover some of the biggest sea creatures ever recorded!</p>
 
-        
+
     </header>
 
     <main>
@@ -36,7 +38,8 @@
             <ul>
                 <li> a Blue Whale can end up as around 200 tons, or between 200,000 and 300,000 pounds, between the
                     weight of 25 and 30 adult elephants!</li>
-                <li>Blue Whales communicate using a low frequency noise that can be heard as far as hundreds of miles</li>
+                <li>Blue Whales communicate using a low frequency noise that can be heard as far as hundreds of miles
+                </li>
                 <li>They have hearts the size of a small car, weighing about 1,000 pounds</li>
             </ul>
         </section>
@@ -53,8 +56,25 @@
                     of a sports ball!</li>
                 <li>most instances have recorded this sea beast to be about 15 meters long, and between 1,100 and 1,500
                     pounds! </li>
-                <li>the only known creature to be hunting the colossal squid is the famed sperm whale</li>
+                <li>the only known creature to be hunting the colossal squid is the famed
+                    <span class="clickable" onclick="toggleSpermWhale()">Sperm Whale</span>.
+                </li>
             </ul>
+        </section>
+
+        <!-- Hidden Section for Sperm Whale -->
+        <section id="sperm-whale" class="hidden">
+            <h2><i class="fa-solid fa-whale"></i> Sperm Whale</h2>
+            <img src="images/sperm_whale.jpg" alt="Sperm Whale, the deep-sea predator of the colossal squid">
+            <p>The Sperm Whale is one of the deepest-diving whales, capable of hunting colossal squid at extreme depths.
+            </p>
+            <ul>
+                <li>Sperm Whales can dive over 3,000 meters deep and hold their breath for up to 90 minutes.</li>
+                <li>They have the largest brain of any known animal, weighing around 8 kilograms (17 pounds).</li>
+                <li>Their powerful echolocation helps them locate prey in the pitch-black deep sea.</li>
+            </ul>
+        </section>
+        </ul>
         </section>
 
         <section id="whale-shark">
@@ -89,7 +109,16 @@
     <footer>
         <p>&copy; 2025 Super Cool Sea Creatures</p>
     </footer>
-
+    <script>
+        function toggleSpermWhale() {
+            var section = document.getElementById("sperm-whale");
+            if (section.style.display === "none" || section.style.display === "") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>

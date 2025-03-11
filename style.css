@@ -19,7 +19,7 @@ body {
 
 /* main content*/
 h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lobster', cursive;
     font-size: 3rem;
     margin: 0;
 }
@@ -49,6 +49,10 @@ h2::before {
     content: "🦑";
     font-size: 30px;
     margin-right: 10px;
+}
+
+#sperm-whale h2::before {
+    content: "🐳";
 }
 
 main {
@@ -107,6 +111,12 @@ body.immortal-creatures img {
     width: 70%;
     max-width: 600px;
     height: auto;
+}
+
+img[alt*="immortal jellyfish"] {
+    max-width: 200px;
+    height: 150px;
+    object-fit: cover;
 }
 
 /* nav menu*/
@@ -222,4 +232,33 @@ nav a.active {
     p {
         font-size: 0.7rem !important;
     }
+}
+
+/*HIDDEN SECRETS*/
+.hidden {
+    display: none;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.clickable:hover {
+    color: #ff6f61;
+    text-decoration: underline;
+}
+
+.hint {
+    cursor: pointer;
+    background-color: #1abc9c;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.hint:hover {
+    background-color: #16a085;
 }

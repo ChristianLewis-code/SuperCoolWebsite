@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super Cool Sea Creatures</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <nav>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <nav>
       <a href="index.html" class="active">Home</a>
       <a href="page2.html">Immortal Creatures</a>
       <a href="page3.html">Gargantuan Creatures</a>
@@ -29,8 +30,33 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Super Cool Sea Creatures</p>
-    </footer>
+    <section id="hints-section">
+      <h2>Need Help?</h2>
+      <div class="hint" onclick="toggleHint('hint1')">🔍 Hint 1: home page</div>
+      <p id="hint1" class="hidden">hmm, i dont know, but maybe there is one here!</p>
+  
+      <div class="hint" onclick="toggleHint('hint2')">🔍 Hint 2: immortal? </div>
+      <p id="hint2" class="hidden">this little guy is vulnerable to age, but can regrow it's limbs!</p>
+  
+      <div class="hint" onclick="toggleHint('hint3')">🔍 Hint 3: Giant Beast</div>
+      <p id="hint3" class="hidden">This is one of the biggest sea creatures, beaten by only the Fin Whale and Blue Whale</p>
+
+      <div class="hint" onclick="toggleHint('hint4')">🔍 Hint 4: opposites?</div>
+    <p id="hint4" class="hidden"> with white there is black, for every demon there is a ???</p>
+  </section>
+  <script>
+    function toggleHint(id) {
+        var hint = document.getElementById(id);
+        if (hint.style.display === "none" || hint.style.display === "") {
+            hint.style.display = "block";
+        } else {
+            hint.style.display = "none";
+        }
+    }
+</script>
+
 </body>
+<footer>
+  <p>&copy; 2025 Super Cool Sea Creatures</p>
+</footer>
 </html>
