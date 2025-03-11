@@ -40,3 +40,11 @@ body.immortal-creatures img {
 }
 html: <body class="immortal-creatures">
 this fixed the images size and flexibility, but created breakpoints with the text so I will work on that after.
+
+adjustment #3: nav on header
+
+i added the nav into the header, will make more code adjusting it to look visually appealing
+        <a href="index.html">Back To Home</a>
+        <a href="page2.html">Immortal Creatures</a>
+        <a href="page3.html">Gargantuan Creatures</a>
+        <a href="page4.html">Super cool sea creatures</a>
