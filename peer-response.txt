@@ -1,0 +1,42 @@
+Peer responses:
+
+Hi Christian! 
+One of the things I really like about your webpage is your use of icons throughout the website! Making them pink to stand out against the blue background is great! 
+Another thing I appreciate a lot your use of images to help give the reader a good visualization of the specific sea creatures that your are educating them about!
+
+Some things that I would change or take a look into include: 
+1. One thing I would consider is moving your nav bar to the vey top of the page. It's not too big of a deal, but a lot of websites use this technique as the norm these days!
+2. Another thing I would do is set the images to be a % on your immortal sea creatures page. That way they can grow and shrink with the window size. Making them a bit easier to see, and you can use a min-width style rule to prevent them from getting too small as well!
+3. The last thing I would suggest is that on your immortal creatures page is maybe move your <h1> under your nav bar and make it an <h2> or <h3> instead, and make "Discover more deep sea animals!" an <h1> instead! That way it can help improve the flow of your webpage as well as help draw the reader's eye down more.
+Overall I really love your website, learning more about deep sea creatures is always fascinating. Especially when it is done in such a fun and nice to look at way that your website is!
+
+
+
+Hi Christian! Aesthetically your website is pleasing, and the content feels correct with the color scheme. I really enjoyed looking through it. Everything looks intentional and clean.
+
+
+As for suggestions, I only had a few:
+
+When the window size is maximized on the screen your images and boxes get so large, that the image is the only thing seen on the page, and it makes me less inclined to scroll.
+On the immortal creatures page, the images are a little too small to see the detail.
+On Gargantuan Creatures, the dots from your <ul> elements make me think that there is a drop-down or link to click. Maybe add 
+list-style-type: none; to your ul elements.
+
+adjustment #1: bullet point confusion: 
+ul {
+    list-style-position: inside;
+}
+the initial suggestion was removing the bullets, but made the text more confusing that way, so i simply aligned 
+the bullets with the flow of the words so they werent stuck on the left side of the page
+
+adjustment #2: immortal cretaures page size + flexibility
+
+body.immortal-creatures img {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 700px;
+    height: auto;
+}
+html: <body class="immortal-creatures">
+this fixed the images size and flexibility, but created breakpoints with the text so I will work on that after.
