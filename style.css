@@ -243,6 +243,16 @@ nav a.active {
     cursor: pointer;
 }
 
+label.clickable {
+    color: #ff6f61;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+label.clickable:hover {
+    color: #1abc9c;
+}
+
 .clickable:hover {
     color: #ff6f61;
     text-decoration: underline;
@@ -261,4 +271,29 @@ nav a.active {
 
 .hint:hover {
     background-color: #16a085;
+}
+/*secret pg 1*/
+#leafy-sea-dragon-detail {
+    display: none;
+    background-color: #5b7ea3;
+    color: #ecf0f1;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ecf0f1;
+}
+
+/* forcing paragraph text to white bc background breaks it?*/
+#leafy-sea-dragon-detail p {
+    background-color: transparent;
+    color: #ecf0f1;
+}
+
+#leafy-sea-dragon-detail ul {
+    list-style-position: inside;
+    padding-left: 0;
+    text-align: center;
+}
+
+#leafy-sea-dragon-detail li {
+    margin: 10px 0;
 }

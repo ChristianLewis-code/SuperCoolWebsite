@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,12 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-        <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="page2.html">Immortal Creatures</a>
-      <a href="page3.html">Gargantuan Creatures</a>
-      <a href="page4.html">Super cool sea creatures</a>
-  </nav>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="page2.html">Immortal Creatures</a>
+        <a href="page3.html">Gargantuan Creatures</a>
+        <a href="page4.html">Super cool sea creatures</a>
+    </nav>
 </head>
 
 <body>
@@ -20,43 +21,69 @@
         <h1>Welcome to Super Cool Sea Creatures!</h1>
         <p>Explore the Various levels of knowledge about hidden Sea Creatures!</p>
 
-        
+
     </header>
 
     <main>
         <section>
             <h2>Discover the Deep</h2>
-            <p>throughout the pages there are creatures that are hidden more than others, look throughout the text, and maybe even the animals themselves to find hidden information about even more aquatic beings!</p>
+            <p>throughout the pages there are creatures that are hidden more than others, look throughout the text, and
+                maybe even the animals themselves to find hidden information about even more aquatic beings!</p>
         </section>
     </main>
 
     <section id="hints-section">
-      <h2>Need Help?</h2>
-      <div class="hint" onclick="toggleHint('hint1')">🔍 Hint 1: home page</div>
-      <p id="hint1" class="hidden">hmm, i dont know, but maybe there is one here!</p>
-  
-      <div class="hint" onclick="toggleHint('hint2')">🔍 Hint 2: immortal? </div>
-      <p id="hint2" class="hidden">this little guy is vulnerable to age, but can regrow it's limbs!</p>
-  
-      <div class="hint" onclick="toggleHint('hint3')">🔍 Hint 3: Giant Beast</div>
-      <p id="hint3" class="hidden">This is one of the biggest sea creatures, beaten by only the Fin Whale and Blue Whale</p>
+        <h2>Need Help?</h2>
+        <div class="hint" onclick="toggleHint('hint1')">🔍 Hint 1: home page</div>
+        <p id="hint1" class="hidden">hmm, i dont know, but maybe there is one <span class="clickable"
+                onclick="revealLeafyDragon()">here!</span></p>
 
-      <div class="hint" onclick="toggleHint('hint4')">🔍 Hint 4: opposites?</div>
-    <p id="hint4" class="hidden"> with white there is black, for every demon there is a ???</p>
-  </section>
-  <script>
-    function toggleHint(id) {
-        var hint = document.getElementById(id);
-        if (hint.style.display === "none" || hint.style.display === "") {
-            hint.style.display = "block";
-        } else {
-            hint.style.display = "none";
+        <div class="hint" onclick="toggleHint('hint2')">🔍 Hint 2: immortal? </div>
+        <p id="hint2" class="hidden">this little guy is vulnerable to age, but can regrow it's limbs!</p>
+
+        <div class="hint" onclick="toggleHint('hint3')">🔍 Hint 3: Giant Beast</div>
+        <p id="hint3" class="hidden">This is one of the biggest sea creatures, beaten by only the Fin Whale and Blue
+            Whale</p>
+
+        <div class="hint" onclick="toggleHint('hint4')">🔍 Hint 4: opposites?</div>
+        <p id="hint4" class="hidden"> with white there is black, for every demon there is a ???</p>
+
+    </section>
+
+    <section>
+        <div id="leafy-sea-dragon-detail" class="hidden">
+            <h2><i class="fa-solid fa-sea-dragon"></i> Leafy Sea Dragon</h2>
+            <img src="images/LeafyDragon.jpg" alt="the very cunning Leafyy Sea Dragon">
+            <p> ok?</p>
+            <ul>
+                <li>It is closely related to the seahorse...</li>
+                <li>It is often mistaken for floating seaweed...</li>
+                <li>It is a protected species...</li>
+            </ul>
+        </div>
+
+    </section>
+    <script>
+        function toggleHint(id) {
+            var hint = document.getElementById(id);
+            if (hint.style.display === "none" || hint.style.display === "") {
+                hint.style.display = "block";
+            } else {
+                hint.style.display = "none";
+            }
         }
-    }
-</script>
+        function revealLeafyDragon() {
+            var dragonSection = document.getElementById("leafy-sea-dragon-detail");
+            if (dragonSection.style.display === "none" || dragonSection.style.display === "") {
+                dragonSection.style.display = "block";
+            }
+        }
+
+    </script>
 
 </body>
 <footer>
-  <p>&copy; 2025 Super Cool Sea Creatures</p>
+    <p>&copy; 2025 Super Cool Sea Creatures</p>
 </footer>
+
 </html>
