@@ -60,6 +60,14 @@ main {
     padding: 50px;
 }
 
+#leafy-sea-dragon-detail h2::before {
+    content: "🐉";
+}
+
+#devil-ray-details h2::before {
+    content: "🦈"
+}
+
 .main-header {
     background-color: #34495e;
     color: #ecf0f1;
@@ -262,16 +270,28 @@ label.clickable:hover {
     cursor: pointer;
     background-color: #1abc9c;
     color: white;
-    padding: 10px;
+    padding: 15px 25px;
     margin: 10px;
     border-radius: 5px;
     display: inline-block;
     font-weight: bold;
+    font-size: 1.2rem;
+    width: 80%;
+    max-width: 300px;
 }
 
 .hint:hover {
-    background-color: #16a085;
+    background-color: #ff6f61;
 }
+
+#hints-section {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    align-items: center; 
+    margin-bottom: 30px;
+}
+
 /*secret pg 1*/
 #leafy-sea-dragon-detail {
     display: none;
@@ -281,8 +301,6 @@ label.clickable:hover {
     margin-top: 20px;
     border: 1px solid #ecf0f1;
 }
-
-/* forcing paragraph text to white bc background breaks it?*/
 #leafy-sea-dragon-detail p {
     background-color: transparent;
     color: #ecf0f1;
@@ -296,4 +314,20 @@ label.clickable:hover {
 
 #leafy-sea-dragon-detail li {
     margin: 10px 0;
+}
+ul {
+    font-size: 1.5rem;
+}
+li {
+    font-size: 1.5rem;
+}
+
+/*secret pg 4*/
+
+#devil-ray-details {
+    background-color: #5b7ea3;
+    color: #ecf0f1;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ecf0f1;
 }
