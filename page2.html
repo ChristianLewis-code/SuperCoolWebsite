@@ -29,7 +29,8 @@
             <h2>Hydra</h2>
             <img src="images/hydra.jpg" alt="Hydra, a microscopic freshwater organism">
             <p>The hydra is a tiny freshwater invertebrate, with the ability to regenerate themselves indefinitely. they
-                also can regrow limbs and heads, hence the comparison to the mythological hydras. due to these facts
+                can <span id="axolotl-click" class="clickable" onclick="toggleAxolotl()">regrow</span> limbs and heads,
+                hence the comparison to the mythological hydras. due to these facts
                 they are a pinnacle of research for aging in biology.</p>
         </section>
 
@@ -49,6 +50,43 @@
                 through a process called transdifferentiation, hence the reason it is considered biologically immortal.
             </p>
         </section>
+
+        <!--2nd row-->
+        <section class="column">
+            <h2>Quahog Clam</h2>
+            <img src="images/Quahog_Clam.jpg" alt="The Quahog Clam, AKA Arctica Islandica">
+            <p>The Ocean Quahog Clam, AKA Arctica Islandica is considered the longest living animal. The longest living
+                Quahog was recorded as 507 years old when researchers opened its clam, accidedentaly killing it in the
+                process.</p>
+        </section>
+
+        <section class="column">
+            <h2>Deep Sea Tubeworms</h2>
+            <img src="images/tubeworms.jpg" alt="A Tubeworm Colony, also known as Riftia">
+            <p>Deep Sea Tubeworms, also known as "Riftia" have the ability to thrive in the most hazardous climates.
+                These worms can grow really fast, but normally live up to a few hundred years. they also have no mouths
+                or stomachs, thriving on bacteria within their own bodies!</p>
+        </section>
+
+        <section id="axolotl-section" class="hidden">
+            <h2>Axolotl</h2>
+            <img src="images/Axolotl.jpg" alt="The Axolotl, a cute creature with the ability to regrow its limbs">
+            <p>A rare and endangered creature, the Axolotl, only found in in the lakes of Xochimilco have the ability to
+                regrow many of its limbs, as well as it's heart without scarring. Due to their abilities, they are a
+                pinnacle of research study for resistance to cancer!</p>
+        </section>
+
+        <script>
+            function toggleAxolotl() {
+                var axolotlSection = document.getElementById("axolotl-section");
+                if (axolotlSection.style.display === "none" || axolotlSection.style.display === "") {
+                    axolotlSection.style.display = "block";
+                } else {
+                    axolotlSection.style.display = "none";
+                }
+            }
+        </script>
+
     </main>
 
     <footer>
