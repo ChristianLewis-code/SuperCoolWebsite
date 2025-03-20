@@ -28,6 +28,9 @@
   </header>
 
   <main>
+      <!-- Jump Links-->
+      <a href="#Sea-Angel">Jump to Sea Angel </a> |
+      <a href="#Dumbo-Octopus">Jump to Dumbo Octopus</a>
 
     <section>
       <h2 class="featured">Glass Squid</h2>
@@ -39,7 +42,7 @@
         light and movement in the deep sea.</p>
     </section>
 
-    <section>
+    <section id="Sea-Angel">
       <h2 class="featured">Sea <span id="angel-click" class="clickable" onclick="revealdevilRay()">Angel</span></h2>
       <img src="images/Sea_angel.jpg" alt="A well defined photograph of the Sea Angel" width="400">
       <p>Sea angels are ethereal-looking creatures with glowing, gelatinous bodies, belonging to the pteropod, or
@@ -49,7 +52,7 @@
         tentacle-like structures to grasp and consume their prey.</p>
     </section>
 
-    <section id="devil-ray-details" class="hidden">
+    <section id="Devil-Ray" class="hidden">
       <h2>Devil Ray</h2>
       <img src="images/DevilRay.jpg" alt="Devil Ray" width="400">
       <p> The Devil Ray is a majestic being closely related to the manta ray, yet with a few differences. despite its
@@ -63,7 +66,7 @@
       </ul>
     </section>
 
-    <section>
+    <section id="Dumbo-Octopus">
       <h2 class="featured">Dumbo Octopus</h2>
       <img src="images/Dumbo.jpg" alt="A dumbo octopus, named after its resemblance to Dumbo the elephant" width="400">
       <p>The Dumbo octopus has distinctive ear-like fins that allow it to propel itself gracefully through the water,
@@ -75,9 +78,9 @@
 
     <script>
       function revealdevilRay() {
-        var devilRayDetails = document.getElementById("devil-ray-details");
+        var DevilRay = document.getElementById("Devil-Ray");
 
-        devilRayDetails.classList.toggle("hidden");
+        DevilRay.classList.toggle("hidden");
       }
     </script>
 

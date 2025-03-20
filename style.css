@@ -51,21 +51,9 @@ h2::before {
     margin-right: 10px;
 }
 
-#sperm-whale h2::before {
-    content: "🐳";
-}
-
 main {
     text-align: center;
     padding: 50px;
-}
-
-#leafy-sea-dragon-detail h2::before {
-    content: "🐉";
-}
-
-#devil-ray-details h2::before {
-    content: "🦈"
 }
 
 .main-header {
@@ -112,6 +100,8 @@ img {
     margin-bottom: 20px;
     max-width: 100%
 }
+
+
 
 body.immortal-creatures img {
     display: block;
@@ -317,20 +307,39 @@ label.clickable:hover {
     margin: 10px 0;
 }
 
-ul {
-    font-size: 1.5rem;
+#leafy-sea-dragon-detail h2::before {
+    content: "🐉";
 }
 
-li {
-    font-size: 1.5rem;
+/*secret page 2*/
+#axolotl-section {
+    background-color: #5b7ea3
 }
+
+#axolotl-section h2::before {
+    content: "🦎 ";
+}
+
+/*secret page 3*/
+#sperm-whale {
+    background-color: #5b7ea3
+}
+
+#sperm-whale h2::before {
+    content: "🐳";
+}
+
 
 /*secret pg 4*/
 
-#devil-ray-details {
+#Devil-Ray {
     background-color: #5b7ea3;
     color: #ecf0f1;
     padding: 20px;
     margin-top: 20px;
     border: 1px solid #ecf0f1;
+}
+
+#Devil-Ray h2::before {
+    content: "🦈"
 }
