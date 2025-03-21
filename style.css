@@ -199,6 +199,14 @@ nav a.active {
         max-width: 80%;
         width: auto;
     }
+    ul {
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 10px;
+        line-height: 1.6;
+    }
 }
 
 @media screen and (max-width: 480px) {
