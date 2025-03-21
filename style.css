@@ -119,6 +119,7 @@ img[alt*="immortal jellyfish"] {
 
 /* nav menu*/
 nav {
+    width: 100%;
     text-align: center;
     background-color: #1abc9c;
     padding: 15px 20px;
