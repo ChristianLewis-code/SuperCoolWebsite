@@ -127,7 +127,7 @@ nav {
     gap: 20px;
     border-bottom: 10px solid #0f7766;
     border-top: 10px solid #0f7766;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 nav a {
