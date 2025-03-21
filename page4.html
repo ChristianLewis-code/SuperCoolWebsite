@@ -43,7 +43,7 @@
     </section>
 
     <section id="Sea-Angel">
-      <h2 class="featured">Sea <span id="angel-click" class="clickable" onclick="revealdevilRay()">Angel</span></h2>
+      <h2 class="featured">Sea <span id="angel-click" class="clickable" onclick="revealDevilRay()">Angel</span></h2>
       <img src="images/Sea_angel.jpg" alt="A well defined photograph of the Sea Angel" width="400">
       <p>Sea angels are ethereal-looking creatures with glowing, gelatinous bodies, belonging to the pteropod, or
         winged-snail, group. Unlike their shelled relatives, they have evolved into completely shell-less, free-swimming
@@ -52,7 +52,7 @@
         tentacle-like structures to grasp and consume their prey.</p>
     </section>
 
-    <section id="Devil-Ray" class="hidden">
+    <section id="Devil-Ray" style="display: none;">
       <h2>Devil Ray</h2>
       <img src="images/DevilRay.jpg" alt="Devil Ray" width="400">
       <p> The Devil Ray is a majestic being closely related to the manta ray, yet with a few differences. despite its
@@ -60,7 +60,6 @@
         24 miles per hour!</p>
       <ul>
         <li>unlike the manta ray and its subspecies, the devil rays feed in schools and large groups</li>
-        
         <li>The Devil Ray has a popular habit that makes them so unique, leaping out of the water as if they could fly!
         </li>
         
@@ -77,15 +76,17 @@
         remain relatively small, reaching an average adult size of just 8 inches, making them one of the more petite
         members of the octopus family.</p>
     </section>
-
-    <script>
-      function revealdevilRay() {
-        var DevilRay = document.getElementById("Devil-Ray");
-
-        DevilRay.classList.toggle("hidden");
+<script>
+    function revealDevilRay() {
+      var devilRay = document.getElementById("Devil-Ray");
+      
+      if (devilRay.style.display === "none" || devilRay.style.display === "") {
+          devilRay.style.display = "block";
+      } else {
+          devilRay.style.display = "none";
       }
-    </script>
-
+  }
+</script>
 
 
 
